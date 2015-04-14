@@ -7,16 +7,16 @@ var five = require('johnny-five');
 controller.listen(8080);
 
 function handler (req, res) {
-  fs.readFile(__dirname + '/index.html',
-  function (err, data) {
-    if (err) {
-      res.writeHead(500);
-      return res.end('Error loading index.html');
-    }
- 
-    res.writeHead(200);
-    res.end(data);
-  });
+	fs.readFile(__dirname + '/index.html',
+		function (err, data) {
+			if (err) {
+				res.writeHead(500);
+				return res.end('Error loading index.html');
+			}
+			
+			res.writeHead(200);
+			res.end(data);
+		});
 }
 
 
@@ -43,14 +43,12 @@ board.on("ready", function() {
 
 		socket.on('motor1a', function () {
 			console.log("Green Toggled");
-	    green.toggle();
-	  });
-	  
+			green.toggle();
+		});
+		
 		socket.on('motor1b', function () {
 			console.log("Red Toggled");
-	    red.toggle();
-	  });
-
+			red.toggle();
+		});
 	});
-
 });
