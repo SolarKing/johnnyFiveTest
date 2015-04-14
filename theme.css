@@ -1,0 +1,147 @@
+/**
+ * Base
+ * 		body
+ * 		main
+ * 		header
+ */
+
+body {
+	/* struct */
+	margin:0;
+	padding: 0;
+	/* style */
+	background: #e4e4e4;
+}
+
+main {
+	/* struct */
+	/* style */
+}
+
+header {
+	/* struct */
+	/* style */
+}
+
+footer {
+	/* struct */
+	/* style */
+}
+
+/**
+ * Layout
+ * 		#control
+ * 		#control-panel
+ * 		#control-panel header
+ * 		#control-panel main
+ * 		#control-panel footer
+ */
+
+#control {
+	/* struct */
+	width:400px;
+	height: 400px;
+	/* style */	
+}
+
+#control-panel {
+	/* struct */
+	/* style */	
+	border-radius: 10px;
+	background:#343434;
+}
+
+#control-panel header {
+	/* struct */
+	height: 40px;
+	background: #049433;
+	font-size: 16px;
+	text-align: center;
+	padding:10px;
+	box-sizing: border-box;
+	/* style */
+	border-radius: 10px 10px 0 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing:.11em;
+
+	color:#343434;
+}
+
+#pwm-slider {
+	/* struct */
+	position: absolute;
+	bottom: 10px;
+	height: 300px;
+	left: 10px;
+	width:40px;
+	/* style */
+}
+
+#pwm-value {
+	/* struct */
+	position: absolute;
+	top: 45px;
+	left: 10px;
+	/* style */
+	width:40px;
+	height:40px;
+	text-align: center;
+}
+
+#motor1A {
+	/* struct */
+	position: absolute;
+	top : 50px;
+	left: 70px;
+	/* style */
+}
+
+#motor1B {
+	/* struct */
+	position: absolute;
+	top : 100px;
+	left: 70px;
+	/* style */
+}
+
+/**
+ * Modules
+ */
+
+.center-parent {
+	/* struct */
+	position:absolute;
+	right: 50%;
+	bottom: 50%;
+	/* style */
+	/*border: thin black solid;*/
+}
+
+.center-child {
+	/* struct */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height:100%;
+	width:100%;
+	/* style */	
+	/*border: thin black solid;*/
+}
+
+/**
+ * States
+ */
+
+
+/**
+ * jquery ui
+ */
+
+.ui-slider-vertical {
+	background:#189733;
+}
+
+.ui-slider-range {
+	background:white;
+}
